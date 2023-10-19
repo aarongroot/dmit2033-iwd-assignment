@@ -1,0 +1,81 @@
+@use 'colors' as *;
+
+header {
+
+    background-color: $blue;
+
+    .header-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .btn {
+            padding: 0.75rem;
+            background-color: $blue;
+            border: none;
+        }
+
+        svg {
+            width: 50px;
+            stroke: $text-white;
+            fill: $text-white-transparent;
+        }
+
+        nav {
+            flex: 0 0 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height ease-in-out 1s;
+
+            &.show {
+                max-height: 400px;
+            }
+        }
+
+        .menu-links li {
+            line-height: 3.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .menu-links a {
+            display: block;
+            padding-left: 0.75rem;
+            color: $text-white;
+        }
+    }
+}
+
+
+
+// ****************************************Media Query****************************************
+
+@media screen and (min-width: 730px) {
+    header {
+        .header-flex {
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+
+            .btn {
+                display: none;
+            }
+
+            nav {
+                flex: 0 1 auto;
+                max-height: unset;
+
+                .menu-links {
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
+
+            .menu-links li {
+                margin-bottom: 0;
+            }
+
+        }
+    }
+}

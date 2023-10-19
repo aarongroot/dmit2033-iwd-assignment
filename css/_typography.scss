@@ -1,0 +1,26 @@
+// font-family: 'Piazzolla',
+// serif;
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: clamp(1.25rem, 1.1591rem + 0.4545vw, 1.5rem);
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: clamp(1rem, 0.9545rem + 0.2273vw, 1.125rem);
+    line-height: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
