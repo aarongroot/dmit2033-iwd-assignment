@@ -15,6 +15,13 @@ header {
             padding: 0.75rem;
             background-color: $blue;
             border: none;
+            svg{
+                stroke: $text-white-transparent;
+            }
+            &:hover,
+            &:active{
+                background-color: $hover;
+            }
         }
 
         svg {
@@ -40,9 +47,16 @@ header {
 
         .menu-links a {
             display: block;
-            padding-left: 0.75rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
             color: $text-white;
+            &:hover,
+            &:active,
+            &:focus{
+                background-color: $hover;
+            }
         }
+
     }
 }
 
@@ -50,7 +64,7 @@ header {
 
 // ****************************************Media Query****************************************
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 750px) {
     header {
         .header-flex {
             justify-content: space-between;
@@ -68,13 +82,14 @@ header {
                 .menu-links {
                     display: flex;
                     gap: 1rem;
+                    &:focus > a{
+                        background-color: $hover;
+                    }
+                    li{
+                        margin-bottom: 0;
+                    }
                 }
             }
-
-            .menu-links li {
-                margin-bottom: 0;
-            }
-
         }
     }
 }
