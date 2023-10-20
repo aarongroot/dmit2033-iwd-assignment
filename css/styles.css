@@ -148,7 +148,6 @@ header .header-flex .btn {
 }
 header .header-flex svg {
   width: 50px;
-  stroke: #fff;
   fill: rgba(255, 255, 255, 0.6784313725);
 }
 header .header-flex nav {
@@ -257,6 +256,12 @@ section .card-flex .card svg {
   stroke: #798760;
   fill: #798760;
   padding: 1.5rem 0;
+}
+section .card-flex .card svg .eclipse {
+  stroke: #2c3e5b;
+}
+section .card-flex .card svg .inner-svg {
+  fill: #798760;
 }
 section .card-flex .card .card-text-bg {
   background-color: #2c3e5b;

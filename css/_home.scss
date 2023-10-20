@@ -79,6 +79,12 @@ section {
                 stroke: $svg-green;
                 fill: $svg-green;
                 padding: 1.5rem 0;
+                .eclipse{
+                    stroke: $blue;
+                }
+                .inner-svg{
+                    fill: $svg-green;
+                }
             }
 
             .card-text-bg {
