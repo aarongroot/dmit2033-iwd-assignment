@@ -2,7 +2,7 @@
 // ***********************************banner*****************************
 
 .banner {
-    background-image: url(../img/waterfall-3723422_1920.jpg);
+    background-image: url(../img/banner-sm.webp);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -163,45 +163,45 @@ section {
         }
 
         .bg-img:nth-of-type(1) {
-            background-image: url(../img/blue-landscape.jpg);
+            background-image: url(../img/landscape-sm.webp);
             grid-column: 1 / 2;
         }
 
         .bg-img:nth-of-type(2) {
-            background-image: url(../img/arash-asghari-AYAZnkZWkb4-unsplash.jpg);
+            background-image: url(../img/clock-sm.webp);
             grid-column: 2 / -1;
         }
 
         .bg-img:nth-of-type(3) {
-            background-image: url(../img/elegant-red-formal-fashion.jpg);
+            background-image: url(../img/fashion-sm.webp);
         }
 
         .bg-img:nth-of-type(4) {
-            background-image: url(../img/four-friends.jpg);
+            background-image: url(../img/people-sm.webp);
         }
 
         .bg-img:nth-of-type(5) {
-            background-image: url(../img/dark-wall-bedside-table.jpg);
+            background-image: url(../img/design-sm.webp);
         }
 
         .bg-img:nth-of-type(6) {
-            background-image: url(../img/daniel-korpai-HyTwtsk8XqA-unsplash.jpg);
+            background-image: url(../img/technology.webp);
         }
 
         .bg-img:nth-of-type(7) {
-            background-image: url(../img/ramen-noodles-kitchen-and-cooking.jpg);
+            background-image: url(../img/cooking-sm.webp);
         }
 
         .bg-img:nth-of-type(8) {
-            background-image: url(../img/josh-rose-9YQGFzg0RiM-unsplash.jpg);
+            background-image: url(../img/cityscape.webp);
         }
 
         .bg-img:nth-of-type(9) {
-            background-image: url(../img/dog-paws.jpg);
+            background-image: url(../img/dog-paws-sm.webp);
         }
 
         .bg-img:nth-of-type(10) {
-            background-image: url(../img/standing-in-woods.jpg);
+            background-image: url(../img/nature-sm.webp);
         }
     }
 }
@@ -247,6 +247,7 @@ section {
 
 @media screen and (min-width: 700px) {
     .banner {
+        background-image: url(../img/banner-md.webp);
         .banner-text {
             max-width: 550px;
 
@@ -342,6 +343,9 @@ section {
 }
 
 @media screen and (min-width: 1150px) {
+    .banner{
+        background-image: url(../img/banner-lg.webp);
+    }
     .browse {
         .keyword {
             grid-template-columns: repeat(4, 1fr);
@@ -373,23 +377,49 @@ section {
     .browse {
         .keyword {
             grid-template-columns: repeat(5, 1fr);
-
-
+            .bg-img:nth-of-type(1) {
+                background-image: url(../img/landscape-lg.webp);
+                grid-column: 1 / 2;
+            }
+    
+            .bg-img:nth-of-type(2) {
+                background-image: url(../img/clock-lg.webp);
+            }
+    
+            .bg-img:nth-of-type(3) {
+                background-image: url(../img/fashion-lg.webp);
+            }
+    
+            .bg-img:nth-of-type(4) {
+                background-image: url(../img/people-lg.webp);
+            }
+    
             .bg-img:nth-of-type(5) {
+                background-image: url(../img/design-lg.webp);
                 grid-column: 5 / -1;
             }
-
-
+    
+            .bg-img:nth-of-type(6) {
+                background-image: url(../img/technology.webp);
+            }
+    
+            .bg-img:nth-of-type(7) {
+                background-image: url(../img/cooking-lg.webp);
+            }
+    
+            .bg-img:nth-of-type(8) {
+                background-image: url(../img/cityscape.webp);
+            }
+    
             .bg-img:nth-of-type(9) {
-
+                background-image: url(../img/dog-paws-lg.webp);
                 grid-column: 4 / 5;
             }
-
+    
             .bg-img:nth-of-type(10) {
-
+                background-image: url(../img/nature-lg.webp);
                 grid-column: 5 / -1;
             }
         }
     }
-
 }
